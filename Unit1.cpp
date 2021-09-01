@@ -3,6 +3,8 @@
 #include <vcl.h>
 #pragma hdrstop
 #include "mmsystem.h"
+#include <iostream>
+#include <string>
 
 #include "Unit1.h"
 //---------------------------------------------------------------------------
@@ -93,6 +95,11 @@ void sequence()
     howManyClicksCounter=0;
 }
 
+void failureMessage()
+{
+  // "Skucha! Twój wynik: " + IntToStr(howManySounds) + "\n Naciœnij tutaj i zagraj jeszcze raz!"; PROBLEM HERE!!!!
+}
+
 //---------------------------------------------------------------------------
 __fastcall TForm1::TForm1(TComponent* Owner)
         : TForm(Owner)
@@ -102,12 +109,16 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 
 void __fastcall TForm1::FormCreate(TObject *Sender)
 {
+   isGameOn = false;
+   howManySounds=0;
+   howManyClicksCounter=0;
+
    randomize();
    for(int i=0; i<1000; i++)
    {
       numbers[i] = random(5)+1;
    }
-
+   isGameOn = false;
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::Label1Click(TObject *Sender)
@@ -119,6 +130,7 @@ void __fastcall TForm1::Label1Click(TObject *Sender)
      sequence();
    }
 }
+
 //---------------------------------------------------------------------------
 void __fastcall TForm1::z1Click(TObject *Sender)
 {
@@ -128,7 +140,8 @@ void __fastcall TForm1::z1Click(TObject *Sender)
       if(numbers[howManyClicksCounter-1]!=1)
       {
          howManySounds--;
-         Label1->Caption = "Skucha! twój wynik: "+IntToStr(howManySounds);
+         Label1->Caption = "Skucha! Uda³o Ci siê osi¹gn¹æ poziom: " + IntToStr(howManySounds) + "\n Naciœnij tutaj i zagraj jeszcze raz!";
+         //Label1->Caption = failureMessage();   ???????????
          sndPlaySound("snd/gameover.wav",SND_ASYNC);
          isGameOn = false;
       }
@@ -148,7 +161,7 @@ void __fastcall TForm1::z2Click(TObject *Sender)
       if(numbers[howManyClicksCounter-1]!=2)
       {
          howManySounds--;
-         Label1->Caption = "Skucha! twój wynik: "+IntToStr(howManySounds);
+         Label1->Caption = "Skucha! Uda³o Ci siê osi¹gn¹æ poziom: " + IntToStr(howManySounds) + "\n Naciœnij tutaj i zagraj jeszcze raz!";
          sndPlaySound("snd/gameover.wav",SND_ASYNC);
          isGameOn = false;
       }
@@ -168,7 +181,7 @@ void __fastcall TForm1::z3Click(TObject *Sender)
       if(numbers[howManyClicksCounter-1]!=3)
       {
          howManySounds--;
-         Label1->Caption = "Skucha! twój wynik: "+IntToStr(howManySounds);
+         Label1->Caption = "Skucha! Uda³o Ci siê osi¹gn¹æ poziom: " + IntToStr(howManySounds) + "\n Naciœnij tutaj i zagraj jeszcze raz!";
          sndPlaySound("snd/gameover.wav",SND_ASYNC);
          isGameOn = false;
       }
@@ -188,7 +201,7 @@ void __fastcall TForm1::z4Click(TObject *Sender)
       if(numbers[howManyClicksCounter-1]!=4)
       {
          howManySounds--;
-         Label1->Caption = "Skucha! twój wynik: "+IntToStr(howManySounds);
+         Label1->Caption = "Skucha! Uda³o Ci siê osi¹gn¹æ poziom: " + IntToStr(howManySounds) + "\n Naciœnij tutaj i zagraj jeszcze raz!";
          sndPlaySound("snd/gameover.wav",SND_ASYNC);
          isGameOn = false;
       }
@@ -208,7 +221,7 @@ void __fastcall TForm1::z5Click(TObject *Sender)
       if(numbers[howManyClicksCounter-1]!=5)
       {
          howManySounds--;
-         Label1->Caption = "Skucha! twój wynik: "+IntToStr(howManySounds);
+         Label1->Caption = "Skucha! Uda³o Ci siê osi¹gn¹æ poziom: " + IntToStr(howManySounds) + "\n Naciœnij tutaj i zagraj jeszcze raz!";
          sndPlaySound("snd/gameover.wav",SND_ASYNC);
          isGameOn = false;
       }

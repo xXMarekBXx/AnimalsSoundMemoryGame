@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = 279
-  Top = 132
-  Width = 959
-  Height = 579
+  Left = -8
+  Top = -8
+  Width = 1936
+  Height = 1056
   Caption = 'Animal Sound Memory Game'
   Color = clBtnFace
   UseDockManager = True
@@ -17,11 +17,13 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object tlo: TImage
-    Left = 0
-    Top = 0
+    Left = 464
+    Top = 64
     Width = 933
     Height = 183
     AutoSize = True
+    Center = True
+    ParentShowHint = False
     Picture.Data = {
       0A544A504547496D616765D6A30000FFD8FFE000104A46494600010101004800
       480000FFE100224578696600004D4D002A000000080001011200030000000100
@@ -1335,12 +1337,13 @@ object Form1: TForm1
       4500145145001451450014514500145145001451450014514500145145001451
       4500145145001451450014514500145145001451450014514500145145001451
       45007FFFD9}
+    ShowHint = False
   end
   object Label1: TLabel
-    Left = 160
+    Left = 464
     Top = 432
-    Width = 665
-    Height = 65
+    Width = 945
+    Height = 553
     Cursor = crHandPoint
     Alignment = taCenter
     AutoSize = False
@@ -1348,17 +1351,18 @@ object Form1: TForm1
     Color = clBlack
     Font.Charset = EASTEUROPE_CHARSET
     Font.Color = clBlack
-    Font.Height = -48
+    Font.Height = -87
     Font.Name = 'Comic Sans MS'
     Font.Style = []
     ParentColor = False
     ParentFont = False
     Transparent = True
+    WordWrap = True
     OnClick = Label1Click
   end
   object z1: TImage
-    Left = 24
-    Top = 184
+    Left = 480
+    Top = 280
     Width = 81
     Height = 123
     Cursor = crHandPoint
@@ -2310,8 +2314,8 @@ object Form1: TForm1
     OnMouseUp = z1MouseUp
   end
   object z2: TImage
-    Left = 216
-    Top = 184
+    Left = 688
+    Top = 288
     Width = 81
     Height = 123
     Cursor = crHandPoint
@@ -3263,8 +3267,8 @@ object Form1: TForm1
     OnMouseUp = z2MouseUp
   end
   object z3: TImage
-    Left = 432
-    Top = 184
+    Left = 912
+    Top = 288
     Width = 81
     Height = 123
     Cursor = crHandPoint
@@ -4216,8 +4220,8 @@ object Form1: TForm1
     OnMouseUp = z3MouseUp
   end
   object z4: TImage
-    Left = 624
-    Top = 184
+    Left = 1112
+    Top = 288
     Width = 81
     Height = 123
     Cursor = crHandPoint
@@ -5169,8 +5173,8 @@ object Form1: TForm1
     OnMouseUp = z4MouseUp
   end
   object z5: TImage
-    Left = 808
-    Top = 184
+    Left = 1280
+    Top = 288
     Width = 81
     Height = 123
     Cursor = crHandPoint
@@ -6122,8 +6126,8 @@ object Form1: TForm1
     OnMouseUp = z5MouseUp
   end
   object z1a: TImage
-    Left = 24
-    Top = 184
+    Left = 480
+    Top = 280
     Width = 81
     Height = 123
     Cursor = crArrow
@@ -7073,8 +7077,8 @@ object Form1: TForm1
     Visible = False
   end
   object z2a: TImage
-    Left = 216
-    Top = 184
+    Left = 688
+    Top = 288
     Width = 81
     Height = 123
     Cursor = crArrow
@@ -8024,8 +8028,8 @@ object Form1: TForm1
     Visible = False
   end
   object z3a: TImage
-    Left = 432
-    Top = 184
+    Left = 912
+    Top = 288
     Width = 81
     Height = 123
     Cursor = crArrow
@@ -8975,12 +8979,13 @@ object Form1: TForm1
     Visible = False
   end
   object z4a: TImage
-    Left = 624
-    Top = 184
+    Left = 1112
+    Top = 288
     Width = 81
     Height = 123
     Cursor = crArrow
     AutoSize = True
+    ParentShowHint = False
     Picture.Data = {
       07544269746D617072750000424D727500000000000036000000280000005100
       00007B00000001001800000000003C750000530B0000530B0000000000000000
@@ -9922,12 +9927,15 @@ object Form1: TForm1
       0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000
       FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF00
       00FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF00}
+    Proportional = True
+    ShowHint = True
+    Stretch = True
     Transparent = True
     Visible = False
   end
   object z5a: TImage
-    Left = 808
-    Top = 184
+    Left = 1280
+    Top = 288
     Width = 81
     Height = 123
     Cursor = crArrow
