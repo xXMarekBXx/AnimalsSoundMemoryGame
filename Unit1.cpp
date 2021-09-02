@@ -33,9 +33,9 @@ void sequence()
     Form1->z4->Enabled = false;
     Form1->z5->Enabled = false;
 
-    Form1->Label1->Caption = "Nastêpna runda za: 2";
+    Form1->Label1->Caption = IntToStr(howManySounds+1) + " runda rozpocznie siê za: 2";
     Application->ProcessMessages(); Sleep(1000);
-    Form1->Label1->Caption = "Nastêpna runda za: 1";
+    Form1->Label1->Caption = IntToStr(howManySounds+1) + " runda rozpocznie siê za: 1";
     Application->ProcessMessages(); Sleep(1000);
 
     Form1->Label1->Caption = "Zapamiêtaj sekwencjê";
@@ -91,13 +91,14 @@ void sequence()
     Form1->z3->Enabled = true;
     Form1->z4->Enabled = true;
     Form1->z5->Enabled = true;
+    
     Form1->Label1->Caption = "Powtórz sekwencjê";
     howManyClicksCounter=0;
 }
 
 void failureMessage()
 {
-  // "Skucha! Twój wynik: " + IntToStr(howManySounds) + "\n Naciœnij tutaj i zagraj jeszcze raz!"; PROBLEM HERE!!!!
+  "Skucha! Twój wynik: " + IntToStr(howManySounds) + "\n Naciœnij tutaj i zagraj jeszcze raz!";
 }
 
 //---------------------------------------------------------------------------
@@ -141,7 +142,7 @@ void __fastcall TForm1::z1Click(TObject *Sender)
       {
          howManySounds--;
          Label1->Caption = "Skucha! Uda³o Ci siê osi¹gn¹æ poziom: " + IntToStr(howManySounds) + "\n Naciœnij tutaj i zagraj jeszcze raz!";
-         //Label1->Caption = failureMessage();   ???????????
+         //Label1->Caption = failureMessage();//   ???????????
          sndPlaySound("snd/gameover.wav",SND_ASYNC);
          isGameOn = false;
       }

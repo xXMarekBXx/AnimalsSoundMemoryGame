@@ -1,10 +1,11 @@
 object Form1: TForm1
   Left = -8
   Top = -8
-  Width = 1936
-  Height = 1056
+  BorderStyle = bsSingle
   Caption = 'Animal Sound Memory Game'
-  Color = clBtnFace
+  ClientHeight = 1017
+  ClientWidth = 1920
+  Color = clLime
   UseDockManager = True
   DockSite = True
   Font.Charset = DEFAULT_CHARSET
@@ -18,7 +19,7 @@ object Form1: TForm1
   TextHeight = 13
   object tlo: TImage
     Left = 464
-    Top = 64
+    Top = 0
     Width = 933
     Height = 183
     AutoSize = True
@@ -1341,7 +1342,7 @@ object Form1: TForm1
   end
   object Label1: TLabel
     Left = 464
-    Top = 432
+    Top = 368
     Width = 945
     Height = 553
     Cursor = crHandPoint
@@ -1362,7 +1363,7 @@ object Form1: TForm1
   end
   object z1: TImage
     Left = 480
-    Top = 280
+    Top = 216
     Width = 81
     Height = 123
     Cursor = crHandPoint
@@ -2315,7 +2316,7 @@ object Form1: TForm1
   end
   object z2: TImage
     Left = 688
-    Top = 288
+    Top = 224
     Width = 81
     Height = 123
     Cursor = crHandPoint
@@ -3268,7 +3269,7 @@ object Form1: TForm1
   end
   object z3: TImage
     Left = 912
-    Top = 288
+    Top = 224
     Width = 81
     Height = 123
     Cursor = crHandPoint
@@ -4221,7 +4222,7 @@ object Form1: TForm1
   end
   object z4: TImage
     Left = 1112
-    Top = 288
+    Top = 224
     Width = 81
     Height = 123
     Cursor = crHandPoint
@@ -5174,7 +5175,7 @@ object Form1: TForm1
   end
   object z5: TImage
     Left = 1280
-    Top = 288
+    Top = 224
     Width = 81
     Height = 123
     Cursor = crHandPoint
@@ -6127,7 +6128,7 @@ object Form1: TForm1
   end
   object z1a: TImage
     Left = 480
-    Top = 280
+    Top = 216
     Width = 81
     Height = 123
     Cursor = crArrow
@@ -7078,7 +7079,7 @@ object Form1: TForm1
   end
   object z2a: TImage
     Left = 688
-    Top = 288
+    Top = 224
     Width = 81
     Height = 123
     Cursor = crArrow
@@ -8029,7 +8030,7 @@ object Form1: TForm1
   end
   object z3a: TImage
     Left = 912
-    Top = 288
+    Top = 224
     Width = 81
     Height = 123
     Cursor = crArrow
@@ -8980,7 +8981,7 @@ object Form1: TForm1
   end
   object z4a: TImage
     Left = 1112
-    Top = 288
+    Top = 224
     Width = 81
     Height = 123
     Cursor = crArrow
@@ -9935,7 +9936,7 @@ object Form1: TForm1
   end
   object z5a: TImage
     Left = 1280
-    Top = 288
+    Top = 224
     Width = 81
     Height = 123
     Cursor = crArrow
